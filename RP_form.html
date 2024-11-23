@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Profile Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>Business Profile Form</h1></center>
+    <form id="businessForm" action="/save-data" method="POST">
+
+        <div class="form-group">
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" name="businessName" required />
+        </div>
+        <div class="form-group">
+            <label for="ownerName">Owner's Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required />
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required />
+        </div>
+        <div class="form-group">
+            <label for="contact2">WhatsApp Number:</label>
+            <input type="text" id="contact2" name="contact2" required />
+        </div>
+        <div class="form-group">
+            <label for="address1">Address Line 1:</label>
+            <input type="text" id="address1" name="address1" required />
+        </div>
+        <div class="form-group">
+            <label for="address2">Address Line 2:</label>
+            <input type="text" id="address2" name="address2" required />
+        </div>
+        <div class="form-group">
+            <label for="locality">Locality:</label>
+            <input type="text" id="locality" name="locality" required />
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+        </div>
+        <div class="form-group">
+            <label for="country">Country/Region:</label>
+            <input type="text" id="country" name="country" required />
+        </div>
+        <div class="form-group">
+            <label for="pin">Postal Code:</label>
+            <input type="text" id="pin" name="pin" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+            <label for="hours">Working Hours:</label>
+            <input type="text" id="hours" name="hours" required />
+        </div>
+        <div class="form-group">
+            <label for="services">Primary Category:</label>
+            <select id="services" name="services" required>
+                <option value="hotel">Hotel</option>
+                <option value="restaurant">Restaurant</option>
+                        
+                        <option value="mobile">Mobile</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="coffee_shop">Coffee Shop</option>
+                        <option value="retail_store">Retail Store</option>
+                        <option value="gym">Gym</option>
+                        <option value="beauty_salon">Beauty Salon</option>
+                        <option value="spa">Spa</option>
+                        <option value="dentist">Dentist</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="car_dealership">Car Dealership</option>
+                        <option value="hair_salon">Hair Salon</option>
+                        <option value="lawyer">Lawyer</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="service">Services</option>
+                        <option value="eye_clinic">Eye Clinic</option>
+                        <option value="real_estate_agent">Real Estate Agent</option>
+                        <option value="pet_store">Pet Store</option>
+                        <option value="construction_company">Construction Company</option>
+                        <option value="event_planner">Event Planner</option>
+                        <option value="others">Others</option>
+                        <option value="super_market">Super Market</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="services2">Additional Categories:</label>
+            <select id="services2" name="services2" required>
+                <option value="restaurant">Restaurant</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="bakery">Bakery</option>
+                        <option value="coffee_shop">Coffee Shop</option>
+                        <option value="retail_store">Retail Store</option>
+                        <option value="gym">Gym</option>
+                        <option value="beauty_salon">Beauty Salon</option>
+                        <option value="spa">Spa</option>
+                        <option value="dentist">Dentist</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="electrician">Electrician</option>
+                        <option value="car_dealership">Car Dealership</option>
+                        <option value="hair_salon">Hair Salon</option>
+                        <option value="lawyer">Lawyer</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="service">Services</option>
+                        <option value="eye_clinic">Eye Clinic</option>
+                        <option value="real_estate_agent">Real Estate Agent</option>
+                        <option value="pet_store">Pet Store</option>
+                        <option value="construction_company">Construction Company</option>
+                        <option value="event_planner">Event Planner</option>
+                        <option value="others">Others</option>
+                        <option value="super_market">Super Market</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="products">Products/Services:</label>
+            <input type="text" id="products" name="products" required />
+        </div>
+        <button type="button" onclick="saveToCSV()">Submit</button>
+    </form>
+
+    <script>
+        function saveToCSV() {
+            const form = document.getElementById('businessForm');
+            const formData = new FormData(form);
+            
+            let csvContent = 'data:text/csv;charset=utf-8,';
+            csvContent += 'Business Name,Owner\'s Name,Contact Number,WhatsApp Number,Address Line 1,Address Line 2,Locality,City,Country/Region,Postal Code,Email Address,Working Hours,Primary Category,Additional Categories,Products/Services\n';
+
+            const values = [
+                formData.get('businessName'),
+                formData.get('ownerName'),
+                formData.get('contact'),
+                formData.get('contact2'),
+                formData.get('address1'),
+                formData.get('address2'),
+                formData.get('locality'),
+                formData.get('city'),
+                formData.get('country'),
+                formData.get('pin'),
+                formData.get('email'),
+                formData.get('hours'),
+                formData.get('services'),
+                formData.get('services2'),
+                formData.get('products')
+            ];
+
+            // Create a safe file name from the business name
+            let fileName = formData.get('businessName').replace(/[^a-z0-9]/gi, '_').toLowerCase() + '.csv';
+
+            csvContent += values.map(value => `"${value}"`).join(',') + '\n';
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', fileName);  // Set file name dynamically
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+
+</html>
